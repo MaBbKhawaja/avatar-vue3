@@ -1,0 +1,61 @@
+{
+  "name": "avatar-vue3",
+  "author": "Mirza Anees Baig Barlas",
+  "type": "module",
+  "version": "0.0.12",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/avatar-vue3.umd.cjs",
+  "module": "./dist/avatar-vue3.js",
+  "exports": {
+    ".": {
+      "import": "./dist/avatar-vue3.js",
+      "require": "./dist/avatar-vue3.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "homepage": "https://mabbkhawaja.github.io/avatar-vue3/?path=/docs/avatar--docs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaBbKhawaja/avatar-vue3"
+  },
+  "keywords": [
+    "avatar",
+    "display picture",
+    "vue3 avatar",
+    "image placeholder"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc ",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "deploy-storybook": "gh-pages -d storybook-static"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.8.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@storybook/vue3": "^8.2.9",
+    "@storybook/vue3-vite": "^8.2.9",
+    "@types/node": "^20.2.5",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "gh-pages": "^6.1.1",
+    "semantic-release": "^24.1.0",
+    "storybook": "^8.2.9",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^2.1.6"
+  }
+}
